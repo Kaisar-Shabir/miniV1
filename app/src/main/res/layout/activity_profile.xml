@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_profile"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/button_bg_white"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_profilePage_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorTransparent"
+                android:hint="info@dr.dermo.com"
+                android:padding="8dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="First name  : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/et_profilePage_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorTransparent"
+                    android:hint="Dr."
+                    android:padding="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="Last name  : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/et_profilePage_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorTransparent"
+                    android:hint="Dermo"
+                    android:padding="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="5dp"-->
+    <!--        >-->
+    <!--    <Button-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:id="@+id/btn_changePwd"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:background="@color/colorTransparent"-->
+    <!--        android:fontFamily="sans-serif-medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Change password"-->
+    <!--        android:textAllCaps="true"-->
+    <!--        android:textColor="@color/colorBlack"-->
+    <!--        android:textSize="15dp" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:id="@+id/btn_updateProfile"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:background="@color/colorTransparent"-->
+    <!--        android:fontFamily="sans-serif-medium"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Update Profile"-->
+    <!--        android:textAllCaps="true"-->
+    <!--        android:textColor="@color/colorBlack"-->
+    <!--        android:textSize="15dp"-->
+    <!--        />-->
+    <!--    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+
+        <Button
+            android:id="@+id/btn_changePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorTransparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="Change password"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+
+        <Button
+            android:id="@+id/btn_updateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorTransparent"
+            android:fontFamily="sans-serif-medium"
+            android:text="Update Profile"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

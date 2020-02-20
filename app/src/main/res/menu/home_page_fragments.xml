@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+
+    <!--    tools:showIn="navigation_view">-->
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_checkup"
+            android:icon="@drawable/ic_checkup"
+            android:title="Check up" />
+
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_reports"
+            android:title="Reports" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search Disease" />
+
+        <item
+            android:id="@+id/nav_hospitals"
+            android:icon="@drawable/ic_hospital"
+            android:title="Nearby hospitals" />
+
+    </group>
+
+    <item android:title="Feedback">
+        <menu>
+
+            <item
+                android:id="@+id/nav_mail"
+                android:icon="@drawable/ic_email"
+                android:title="Mail" />
+
+            <item
+                android:id="@+id/nav_phone"
+                android:icon="@drawable/ic_call"
+                android:title="Call" />
+
+            <item
+                android:id="@+id/nav_message"
+                android:icon="@drawable/ic_message"
+                android:title="Message" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_chatbot"
+                android:icon="@drawable/ic_chatbot"
+                android:title="Dr. Dermo" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="About App" />
+        </menu>
+    </item>
+
+    <item android:title="current version v1.0.0">
+        <menu>
+            <item
+                android:id="@+id/nav_download"
+                android:icon="@drawable/ic_file_download"
+                android:title="Download latest version" />
+        </menu>
+    </item>
+
+
+</menu>

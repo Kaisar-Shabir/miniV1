@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutPopUp"
+    android:background="@drawable/edge_bg">
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/text"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Dr. Dermo limits its field to skin disease detection. It is a user-friendly Android application that asks user for the photo of the scars or marks for which the user wants to detect, what the problem is.\nThe image will be processed and using the machine learning model, it detects the possible disease. Based on the situation it might take other inputs.\nThe app doesn’t just predict the disease, it also suggests user with the treatment and the doctors they can approach, if any problems detected.\nThe application also functions to remind the user to take the prescribed medicines on time and asks them to buy new ones, when the supply is about to end.\n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        />
+
+</ScrollView>
