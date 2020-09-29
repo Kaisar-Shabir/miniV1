@@ -1,3 +1,4 @@
+# Dr Dermo
 Dr Dermo is an android application that checks user for skin disease.
 The machine learning model was made using TensorFlow.
 With the detection of the disease, it additionally provides the user with possible remedies for the disease and the hospitals around.
